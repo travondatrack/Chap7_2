@@ -1,6 +1,6 @@
 # Multi-stage Dockerfile
 # 1) Build the WAR using Maven
-FROM maven:3.8.8-openjdk-11 AS build
+FROM maven:3.9-openjdk-11 AS build
 WORKDIR /build
 COPY pom.xml .
 # copy source
