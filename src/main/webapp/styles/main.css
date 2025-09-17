@@ -1,0 +1,106 @@
+/* style.css */
+
+/* Reset */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 20px;
+}
+
+/* Tiêu đề */
+h1,
+h2 {
+  color: #008080; /* teal */
+  margin-bottom: 15px;
+}
+
+/* Link danh sách albums */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+a {
+  color: #663399;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form đăng ký */
+form {
+  width: 350px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #006699;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0099cc;
+}
+
+/* Bảng downloads */
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: 15px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #aaa;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #006699;
+  color: white;
+}
+
+td a {
+  color: #006699;
+  font-weight: bold;
+}
+
+td a:hover {
+  color: #cc3300;
+}
