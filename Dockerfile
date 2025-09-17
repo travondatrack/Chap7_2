@@ -1,6 +1,12 @@
 # Multi-stage Dockerfile optimized for Render deployment
 # 1) Build the WAR using Maven
-FROM maven:3.9-openjdk-11-slim AS build
+FROM openjdk:11-jdk-slim AS build
+
+# Install Maven
+RUN apt-get update && \
+    apt-get install -y maven && \
+    rm -rf /var/lib/apt/lists/*
+
 WORKDIR /build
 
 # Copy POM first for better layer caching
