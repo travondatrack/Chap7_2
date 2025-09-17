@@ -12,6 +12,9 @@ FROM tomcat:9.0-jdk11-openjdk
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 
+# Install xmlstarlet for XML manipulation in port configuration
+RUN apt-get update && apt-get install -y xmlstarlet && rm -rf /var/lib/apt/lists/*
+
 # Remove default webapps to keep image small
 RUN rm -rf $CATALINA_HOME/webapps/*
 
